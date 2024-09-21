@@ -1,9 +1,11 @@
-CC=fpc
-PROGRAM=funcion
+SUBDIRS=division funcion
 
-all: $(PROGRAM)
+all:
+	@for dir in $(SUBDIRS); do \
+		make -C $$dir; \
+	done
 
-$(PROGRAM):
-	$(CC) -gl $(PROGRAM).p -o$(PROGRAM)
 clean:
-	rm -frv *.o *.out *~ $(PROGRAM)
+	@for dir in $(SUBDIRS); do \
+		make -C $$dir clean; \
+	done
