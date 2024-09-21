@@ -9,6 +9,7 @@ $(PROGRAM).pdf:
 	$(MV) 000-main.pdf $(PROGRAM).pdf
 clean:
 	rm -frv *.aux *.nav *.out *.toc *.log *.snm *~
+	make -C source_code clean
 clobber:
 	rm -frv *.aux *.nav *.out *.toc *.pdf *.log *.snm *~
 test:
