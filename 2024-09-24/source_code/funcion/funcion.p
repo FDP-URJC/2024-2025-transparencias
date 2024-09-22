@@ -5,14 +5,14 @@
 }
 program funcion;
 
-function suma(x : Real; y : Real): Real;
+function suma(x : real; y : real): real;
 begin
 	result := x + y;
 end;
 
 const
-   A:  Real  = 1.1;
-   B:  Real  = 2.2;
+   A:  real  = 1.1;
+   B:  real  = 2.2;
 
 begin
 	writeln('Suma:', suma(A, B));

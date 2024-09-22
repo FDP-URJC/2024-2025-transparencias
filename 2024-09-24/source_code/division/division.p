@@ -5,14 +5,14 @@
 }
 program division;
 
-function division(x : Real; y : Real): Real;
+function division(x : real; y : real): real;
 begin
 	result := x / y;
 end;
 
 const
-   A:  Real  = 1.1;
-   B:  Real  = 0.0;
+   A: real = 1.1;
+   B: real = 0.0;
 
 begin
 	writeln('Division:');
