@@ -2,7 +2,10 @@ LATEXTOPDF=pdflatex
 PROGRAM=2024-09-24
 MV=mv
 
-all: $(PROGRAM).pdf
+all: $(PROGRAM).pdf source
+
+source:
+	make -C source_code
 
 $(PROGRAM).pdf:
 	$(LATEXTOPDF) 000-main.tex
